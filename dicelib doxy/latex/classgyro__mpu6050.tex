@@ -1,0 +1,58 @@
+\hypertarget{classgyro__mpu6050}{}\section{gyro\+\_\+mpu6050 Class Reference}
+\label{classgyro__mpu6050}\index{gyro\+\_\+mpu6050@{gyro\+\_\+mpu6050}}
+
+
+\hyperlink{classgyro__mpu6050}{gyro\+\_\+mpu6050}, Gyroscope class  
+
+
+
+
+{\ttfamily \#include $<$gyro\+\_\+mpu6050.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgyro__mpu6050_ab5d528e6eb3d387b5afbd73f911c948f}\label{classgyro__mpu6050_ab5d528e6eb3d387b5afbd73f911c948f}} 
+\hyperlink{classgyro__mpu6050_ab5d528e6eb3d387b5afbd73f911c948f}{gyro\+\_\+mpu6050} (hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \&mpu)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgyro__mpu6050}{gyro\+\_\+mpu6050} Gyroscope mpu6050 constructor, requests the i2c bus/adress of the gyroscope. Also wakes up the gyroscope. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__mpu6050_a8f2f1da85b970bf7e9f564d80aeef062}\label{classgyro__mpu6050_a8f2f1da85b970bf7e9f564d80aeef062}} 
+void \hyperlink{classgyro__mpu6050_a8f2f1da85b970bf7e9f564d80aeef062}{update\+\_\+gyro\+X\+YZ} (uint16\+\_\+t \&x, uint16\+\_\+t \&y, uint16\+\_\+t \&z)
+\begin{DoxyCompactList}\small\item\em update\+\_\+gyro\+X\+YZ Obtains raw gyroscope data from the mpu6050 each axis exists of 2 bytes, a high and a low byte, then mashes them together \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__mpu6050_a8700adda96c44677ae97c53f9bf9808d}\label{classgyro__mpu6050_a8700adda96c44677ae97c53f9bf9808d}} 
+void \hyperlink{classgyro__mpu6050_a8700adda96c44677ae97c53f9bf9808d}{update\+\_\+accel\+X\+YZ} (uint16\+\_\+t \&x, uint16\+\_\+t \&y, uint16\+\_\+t \&z)
+\begin{DoxyCompactList}\small\item\em update\+\_\+accel\+X\+YZ Obtains raw accelerometer data from the mpu6050 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__mpu6050_a5b41f980fa2a0a944e8cf9794f7d4c70}\label{classgyro__mpu6050_a5b41f980fa2a0a944e8cf9794f7d4c70}} 
+void \hyperlink{classgyro__mpu6050_a5b41f980fa2a0a944e8cf9794f7d4c70}{update\+\_\+temp} (uint16\+\_\+t \&tmp)
+\begin{DoxyCompactList}\small\item\em update\+\_\+temperature Obtains raw temperature data from the mpu6050 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__mpu6050_a1462eef299ea464162b2113d9a14928d}\label{classgyro__mpu6050_a1462eef299ea464162b2113d9a14928d}} 
+void \hyperlink{classgyro__mpu6050_a1462eef299ea464162b2113d9a14928d}{update\+\_\+all} ()
+\begin{DoxyCompactList}\small\item\em update\+\_\+all Updates all data of the gyroscope \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__mpu6050_a99f8993b2e3af57de308a7162317bb59}\label{classgyro__mpu6050_a99f8993b2e3af57de308a7162317bb59}} 
+uint16\+\_\+t \hyperlink{classgyro__mpu6050_a99f8993b2e3af57de308a7162317bb59}{get\+\_\+tmp} ()
+\begin{DoxyCompactList}\small\item\em returns gyroscope tmp \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__mpu6050_acc6e1e14ee53040db09c37bf439f7506}\label{classgyro__mpu6050_acc6e1e14ee53040db09c37bf439f7506}} 
+uint16\+\_\+t \hyperlink{classgyro__mpu6050_acc6e1e14ee53040db09c37bf439f7506}{get\+\_\+gyroX} ()
+\begin{DoxyCompactList}\small\item\em returns gyroscope X \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__mpu6050_a56f90145147ca6f7afeef6870a4abaf1}\label{classgyro__mpu6050_a56f90145147ca6f7afeef6870a4abaf1}} 
+uint16\+\_\+t \hyperlink{classgyro__mpu6050_a56f90145147ca6f7afeef6870a4abaf1}{get\+\_\+gyroY} ()
+\begin{DoxyCompactList}\small\item\em returns gyroscope Y \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__mpu6050_a955e5fc73fb60db70d9fd21d9845041c}\label{classgyro__mpu6050_a955e5fc73fb60db70d9fd21d9845041c}} 
+uint16\+\_\+t \hyperlink{classgyro__mpu6050_a955e5fc73fb60db70d9fd21d9845041c}{get\+\_\+gyroZ} ()
+\begin{DoxyCompactList}\small\item\em returns gyroscope Z \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__mpu6050_ac121cf3b8dcc2655585a17c587ed7250}\label{classgyro__mpu6050_ac121cf3b8dcc2655585a17c587ed7250}} 
+uint16\+\_\+t \hyperlink{classgyro__mpu6050_ac121cf3b8dcc2655585a17c587ed7250}{get\+\_\+accelX} ()
+\begin{DoxyCompactList}\small\item\em returns accelerometer x \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__mpu6050_ab0ab2bbd7875ccad4c244b6496764f35}\label{classgyro__mpu6050_ab0ab2bbd7875ccad4c244b6496764f35}} 
+uint16\+\_\+t \hyperlink{classgyro__mpu6050_ab0ab2bbd7875ccad4c244b6496764f35}{get\+\_\+accelY} ()
+\begin{DoxyCompactList}\small\item\em returns accelerometer y \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__mpu6050_af90c1ec0103b8c7b168f32779302b96e}\label{classgyro__mpu6050_af90c1ec0103b8c7b168f32779302b96e}} 
+uint16\+\_\+t \hyperlink{classgyro__mpu6050_af90c1ec0103b8c7b168f32779302b96e}{get\+\_\+accelZ} ()
+\begin{DoxyCompactList}\small\item\em returns accelerometer z \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classgyro__mpu6050}{gyro\+\_\+mpu6050}, Gyroscope class 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{gyro__mpu6050_8hpp}{gyro\+\_\+mpu6050.\+hpp}\end{DoxyCompactItemize}

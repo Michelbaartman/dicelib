@@ -1,0 +1,46 @@
+\hypertarget{classgyro__dice__m8}{}\section{gyro\+\_\+dice\+\_\+m8 Class Reference}
+\label{classgyro__dice__m8}\index{gyro\+\_\+dice\+\_\+m8@{gyro\+\_\+dice\+\_\+m8}}
+
+
+\hyperlink{classgyro__dice__m8}{gyro\+\_\+dice\+\_\+m8}\+:\hyperlink{classgyro__dice}{gyro\+\_\+dice}, magic 8 ball  
+
+
+
+
+{\ttfamily \#include $<$gyro\+\_\+dice.\+hpp$>$}
+
+Inheritance diagram for gyro\+\_\+dice\+\_\+m8\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgyro__dice__m8}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgyro__dice__m8_ae0f1941a8ba15a6c5ff9be0d012747e2}\label{classgyro__dice__m8_ae0f1941a8ba15a6c5ff9be0d012747e2}} 
+\hyperlink{classgyro__dice__m8_ae0f1941a8ba15a6c5ff9be0d012747e2}{gyro\+\_\+dice\+\_\+m8} (\hyperlink{classgyro__mpu6050}{gyro\+\_\+mpu6050} gyro, hwlib\+::window\+\_\+ostream display, hwlib\+::target\+::pin\+\_\+out beeper)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgyro__dice__m8}{gyro\+\_\+dice\+\_\+m8} gyrodice d0 constructor, requests a gyroscope, display and a beeper. On initialization starts the internal arduino clock. \end{DoxyCompactList}\item 
+void \hyperlink{classgyro__dice__m8_a1d81aad976c42ef5ac4f8867b0881ad4}{check\+\_\+side} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classgyro__dice__m8}{gyro\+\_\+dice\+\_\+m8}\+:\hyperlink{classgyro__dice}{gyro\+\_\+dice}, magic 8 ball 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgyro__dice__m8_a1d81aad976c42ef5ac4f8867b0881ad4}\label{classgyro__dice__m8_a1d81aad976c42ef5ac4f8867b0881ad4}} 
+\index{gyro\+\_\+dice\+\_\+m8@{gyro\+\_\+dice\+\_\+m8}!check\+\_\+side@{check\+\_\+side}}
+\index{check\+\_\+side@{check\+\_\+side}!gyro\+\_\+dice\+\_\+m8@{gyro\+\_\+dice\+\_\+m8}}
+\subsubsection{\texorpdfstring{check\+\_\+side()}{check\_side()}}
+{\footnotesize\ttfamily void gyro\+\_\+dice\+\_\+m8\+::check\+\_\+side (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+check\+\_\+side Checks wether a seed has already been generated, if not then generates a seed based on arduino clock. Afterwards checks if the device is being shaken. if it is, prints a one of 22 random answers from the answers array.
+
+Reimplemented from \hyperlink{classgyro__dice}{gyro\+\_\+dice}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{gyro__dice_8hpp}{gyro\+\_\+dice.\+hpp}\end{DoxyCompactItemize}

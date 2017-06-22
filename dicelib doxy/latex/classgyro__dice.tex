@@ -1,0 +1,62 @@
+\hypertarget{classgyro__dice}{}\section{gyro\+\_\+dice Class Reference}
+\label{classgyro__dice}\index{gyro\+\_\+dice@{gyro\+\_\+dice}}
+
+
+\hyperlink{classgyro__dice}{gyro\+\_\+dice}, Default dice simulation  
+
+
+
+
+{\ttfamily \#include $<$gyro\+\_\+dice.\+hpp$>$}
+
+Inheritance diagram for gyro\+\_\+dice\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgyro__dice}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgyro__dice_a5d9a01ed984a63bdc59a665c75d0059e}\label{classgyro__dice_a5d9a01ed984a63bdc59a665c75d0059e}} 
+\hyperlink{classgyro__dice_a5d9a01ed984a63bdc59a665c75d0059e}{gyro\+\_\+dice} (\hyperlink{classgyro__mpu6050}{gyro\+\_\+mpu6050} gyro, hwlib\+::window\+\_\+ostream display, hwlib\+::target\+::pin\+\_\+out beeper)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgyro__dice}{gyro\+\_\+dice} gyrodice constructor, requests a gyroscope, display and a beeper. Updates the dice on initialization. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__dice_abdf92bf238356ada218a1bdb560044b1}\label{classgyro__dice_abdf92bf238356ada218a1bdb560044b1}} 
+void \hyperlink{classgyro__dice_abdf92bf238356ada218a1bdb560044b1}{update\+\_\+dice} ()
+\begin{DoxyCompactList}\small\item\em update\+\_\+dice grabs gyroscope values and works them \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__dice_ab3bb2c5298f7fb2e53f8b639d4520cf7}\label{classgyro__dice_ab3bb2c5298f7fb2e53f8b639d4520cf7}} 
+void \hyperlink{classgyro__dice_ab3bb2c5298f7fb2e53f8b639d4520cf7}{beep\+\_\+dice} ()
+\begin{DoxyCompactList}\small\item\em beep\+\_\+dice sends out a beep \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__dice_a4c3a9c9c4be7988e33ab079278c81f89}\label{classgyro__dice_a4c3a9c9c4be7988e33ab079278c81f89}} 
+void \hyperlink{classgyro__dice_a4c3a9c9c4be7988e33ab079278c81f89}{print\+\_\+xyz} ()
+\begin{DoxyCompactList}\small\item\em print\+\_\+xyz prints accelX, accelY, accelZ, roll \& pitch variables on the display \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__dice_afe35725bea57da1a491da5c159fbe201}\label{classgyro__dice_afe35725bea57da1a491da5c159fbe201}} 
+void \hyperlink{classgyro__dice_afe35725bea57da1a491da5c159fbe201}{print\+\_\+text} (char str\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em print\+\_\+text prints text on the display \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__dice_a1a6a9e55abb9dad13e516fcd6a6bf7c7}\label{classgyro__dice_a1a6a9e55abb9dad13e516fcd6a6bf7c7}} 
+void \hyperlink{classgyro__dice_a1a6a9e55abb9dad13e516fcd6a6bf7c7}{print\+\_\+number} (int i)
+\begin{DoxyCompactList}\small\item\em print\+\_\+number prints a number on the display \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__dice_a6857792a29d9b9ad58ab37e0ccbcf2d3}\label{classgyro__dice_a6857792a29d9b9ad58ab37e0ccbcf2d3}} 
+virtual void {\bfseries check\+\_\+side} ()
+\item 
+\mbox{\Hypertarget{classgyro__dice_a267214c19a7631e8232d9597d9ae1729}\label{classgyro__dice_a267214c19a7631e8232d9597d9ae1729}} 
+virtual void {\bfseries set\+\_\+side} ()
+\item 
+\mbox{\Hypertarget{classgyro__dice_a73b09feb6858574531229a47d3daf84e}\label{classgyro__dice_a73b09feb6858574531229a47d3daf84e}} 
+int \hyperlink{classgyro__dice_a73b09feb6858574531229a47d3daf84e}{get\+\_\+acX} ()
+\begin{DoxyCompactList}\small\item\em returns acX \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__dice_aba559b007667feb5887f60881d5bb017}\label{classgyro__dice_aba559b007667feb5887f60881d5bb017}} 
+int \hyperlink{classgyro__dice_aba559b007667feb5887f60881d5bb017}{get\+\_\+acY} ()
+\begin{DoxyCompactList}\small\item\em returns acY \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__dice_a8ae424342f37376151625dfd47804db6}\label{classgyro__dice_a8ae424342f37376151625dfd47804db6}} 
+int \hyperlink{classgyro__dice_a8ae424342f37376151625dfd47804db6}{get\+\_\+acZ} ()
+\begin{DoxyCompactList}\small\item\em returns acZ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classgyro__dice}{gyro\+\_\+dice}, Default dice simulation 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{gyro__dice_8hpp}{gyro\+\_\+dice.\+hpp}\item 
+gyro\+\_\+dice.\+cpp\end{DoxyCompactItemize}

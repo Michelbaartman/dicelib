@@ -1,0 +1,34 @@
+\hypertarget{classgyro__dice__d0}{}\section{gyro\+\_\+dice\+\_\+d0 Class Reference}
+\label{classgyro__dice__d0}\index{gyro\+\_\+dice\+\_\+d0@{gyro\+\_\+dice\+\_\+d0}}
+
+
+\hyperlink{classgyro__dice__d0}{gyro\+\_\+dice\+\_\+d0}\+:\hyperlink{classgyro__dice}{gyro\+\_\+dice}, random number generator  
+
+
+
+
+{\ttfamily \#include $<$gyro\+\_\+dice.\+hpp$>$}
+
+Inheritance diagram for gyro\+\_\+dice\+\_\+d0\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgyro__dice__d0}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgyro__dice__d0_a5ff76c0046425a946609726a8896b94c}\label{classgyro__dice__d0_a5ff76c0046425a946609726a8896b94c}} 
+\hyperlink{classgyro__dice__d0_a5ff76c0046425a946609726a8896b94c}{gyro\+\_\+dice\+\_\+d0} (\hyperlink{classgyro__mpu6050}{gyro\+\_\+mpu6050} gyro, hwlib\+::window\+\_\+ostream display, hwlib\+::target\+::pin\+\_\+out beeper, int max\+Sides)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgyro__dice__d0}{gyro\+\_\+dice\+\_\+d0} gyrodice d0 constructor, requests a gyroscope, display and a beeper. On initialization starts the internal arduino clock. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgyro__dice__d0_ad5b0b46a729eb22c55fada78c2ebec24}\label{classgyro__dice__d0_ad5b0b46a729eb22c55fada78c2ebec24}} 
+void \hyperlink{classgyro__dice__d0_ad5b0b46a729eb22c55fada78c2ebec24}{check\+\_\+side} ()
+\begin{DoxyCompactList}\small\item\em check\+\_\+side Checks wether a seed has already been generated, if not then generates a seed based on arduino clock. Afterwards checks if the device is being shaken. if it is, prints a random number based on dice sides. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classgyro__dice__d0}{gyro\+\_\+dice\+\_\+d0}\+:\hyperlink{classgyro__dice}{gyro\+\_\+dice}, random number generator 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{gyro__dice_8hpp}{gyro\+\_\+dice.\+hpp}\end{DoxyCompactItemize}
