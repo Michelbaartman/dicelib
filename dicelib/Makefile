@@ -9,7 +9,7 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := 
+SOURCES :=
 
 # header files in this project
 HEADERS := gyro_mpu6050.hpp gyro_dice.hpp

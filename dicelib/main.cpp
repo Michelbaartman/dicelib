@@ -75,11 +75,40 @@ int main( void ){
     // gyro_dice_m8 | magic 8 ball, shake generates a random answers
     auto dice = gyro_dice_m8( gyro, oled_window, beeper);
     
+    bool test_ac = false;
+    bool test_rotation = false;
+    
     // main loop
     while(1){
-        dice.update_dice();
-        dice.check_side();
-        //dice.print_xyz(); // testing purposes
+        if(test_ac == false){
+            for(;;){
+                if(dice.test_ac() == true){ 
+                    hwlib::cout << "accelerometer working: true \n"; 
+                    test_ac = true; 
+                    break;
+                } else { 
+                    hwlib::cout << "accelerometer working: false \n"; 
+                }
+                hwlib::wait_ms(1000);
+            }
+        }
+        
+        if(test_rotation == false){
+            for(;;){
+                if(dice.test_rotation() == true){ 
+                    hwlib::cout << "rotation working: true \n"; 
+                    test_rotation = true; 
+                    break; 
+                } else { 
+                    hwlib::cout << "rotation working: false \n"; 
+                }
+                hwlib::wait_ms(1000);
+            }
+        }
+            
+        //dice.update_dice();
+        //dice.check_side();
+        dice.print_xyz(); // testing purposes
         hwlib::wait_ms(33);
     }
 }

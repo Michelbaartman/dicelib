@@ -111,6 +111,21 @@ public:
     int get_acX(){ return acX; } ///< returns acX
     int get_acY(){ return acY; } ///< returns acY
     int get_acZ(){ return acZ; } ///< returns acZ
+    
+    // testers
+    int test_ac(){ 
+        if( acX < 680 && acY < 680 && acZ < 680 ){ 
+            return true; 
+        } return false;
+    }
+    
+    int test_rotation(){
+        if( roll < 90 || roll > -90 ){
+            if( pitch < 90 || pitch > -90 ){
+                return true;
+            }
+        } return false;
+    }
 };
 
 /*! \brief gyro_dice_d6:gyro_dice, d6 simulation

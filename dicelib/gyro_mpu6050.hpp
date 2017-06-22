@@ -112,8 +112,6 @@ public:
     uint16_t get_accelX()   { return accelX; } ///< returns accelerometer x
     uint16_t get_accelY()   { return accelY; } ///< returns accelerometer y
     uint16_t get_accelZ()   { return accelZ; } ///< returns accelerometer z
-    
-    
 };
 
 #endif // GYRO_MPU6050_HPP
